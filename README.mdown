@@ -1,0 +1,8 @@
+# SSN SQL
+
+A couple of sql functions for calculating a user's age based on swedish sequrity number format.
+
+Examples
+    SELECT get_age_from_social_security_number('790628-0000');
+    
+    SELECT get_age_from_social_security_number(u.ssn) FROM users u;
