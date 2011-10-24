@@ -7,3 +7,5 @@ Examples
     SELECT get_age_from_social_security_number('790628-0000');
     
     SELECT get_age_from_social_security_number(u.ssn) FROM users u;
+
+    SELECT * FROM users u WHERE get_age_from_social_security_number(ssn) >= 18;
